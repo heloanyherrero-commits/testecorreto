@@ -1,0 +1,9 @@
+{
+  "name": "Meu Aplicativo",
+  "short_name": "Meu App",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff"
+}
