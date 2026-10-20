@@ -107,6 +107,29 @@
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
+        
+.logo-gov {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: -3px;
+}
+
+.g, .b, .r {
+  color: #1351b4;
+}
+
+.o {
+  color: #ffcd07;
+}
+
+.v {
+  color: #168821;
+}
+
+.ponto {
+  color: #ffcd07;
+}
 
         /* Watermark & Security Pattern styling for Fallback Cards */
         .guilloche-bg {
@@ -119,20 +142,6 @@
     </style>
 </head>
 <body>
-
-    <!-- Main Mobile Shell Container -->
-    <div class="mobile-screen">
-
-        <!-- MOBILE TOP STATUS BAR -->
-        <div class="w-full bg-white px-6 pt-3 pb-2 flex justify-between items-center text-xs text-slate-800 font-semibold z-30 select-none">
-            <span>20:45</span>
-            <div class="flex items-center gap-2">
-                <i class="fa-solid fa-signal"></i>
-                <i class="fa-solid fa-wifi"></i>
-                <i class="fa-solid fa-battery-three-quarters text-sm"></i>
-            </div>
-        </div>
-
         <!-- APP VIEWS CONTAINER -->
         <div class="flex-1 relative overflow-hidden flex flex-col bg-slate-100">
 
@@ -141,7 +150,7 @@
                 <!-- Header Gov.br Top -->
                 <div class="bg-white px-4 py-3 flex justify-between items-center border-b border-slate-100">
                     <div class="flex items-center gap-1">
-                        <span class="text-govNavy font-extrabold text-2xl tracking-tighter">gov<span class="text-govGreen">.br</span></span>
+                        <span class="g">g</span><span class="o">o</span><span class="v">v</span><span class="ponto">.</span><span class="b">b</span><span class="r">r</span>
                     </div>
                     <div class="w-9 h-9 rounded-full bg-slate-200 border-2 border-slate-300 overflow-hidden flex items-center justify-center text-slate-500">
                         <i class="fa-solid fa-user text-lg"></i>
@@ -170,10 +179,61 @@
 
                             <!-- Decorative Coat of Arms -->
                             <div class="absolute -right-6 -bottom-6 w-36 h-36 opacity-20 pointer-events-none">
-                                <svg viewBox="0 0 100 100" fill="currentColor" class="text-teal-900">
-                                    <circle cx="50" cy="50" r="40" stroke="currentColor" stroke-width="4" fill="none"/>
-                                    <polygon points="50,15 62,38 87,42 68,60 73,85 50,72 27,85 32,60 13,42 38,38" fill="currentColor"/>
-                                </svg>
+                                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="100" cy="100" r="92"/>
+      <circle cx="100" cy="100" r="84"/>
+      <circle cx="100" cy="100" r="53"/>
+      <circle cx="100" cy="100" r="47"/>
+    </g>
+
+    <!-- Raios ao redor da estrela -->
+    <g stroke="currentColor" stroke-width="1.5">
+      <path d="M100 48V25 M100 152V175
+               M48 100H25 M152 100H175
+               M63 63L48 48 M137 63L152 48
+               M63 137L48 152 M137 137L152 152"/>
+      <path d="M100 53L111 84L145 84L118 104
+               L128 137L100 117L72 137L82 104
+               L55 84L89 84Z"
+            fill="currentColor"/>
+    </g>
+
+    <!-- Ramos ornamentais -->
+    <g fill="none" stroke="currentColor" stroke-width="2"
+       stroke-linecap="round">
+      <path d="M45 145 Q18 100 44 57"/>
+      <path d="M155 145 Q182 100 156 57"/>
+      <path d="M43 125 Q25 118 28 105 Q44 108 43 125Z"
+            fill="currentColor"/>
+      <path d="M37 105 Q18 91 28 80 Q42 88 37 105Z"
+            fill="currentColor"/>
+      <path d="M40 82 Q31 63 44 56 Q53 71 40 82Z"
+            fill="currentColor"/>
+      <path d="M157 125 Q175 118 172 105 Q156 108 157 125Z"
+            fill="currentColor"/>
+      <path d="M163 105 Q182 91 172 80 Q158 88 163 105Z"
+            fill="currentColor"/>
+      <path d="M160 82 Q169 63 156 56 Q147 71 160 82Z"
+            fill="currentColor"/>
+    </g>
+
+    <!-- Detalhes superiores e inferiores -->
+    <g fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M100 8 L106 20 L100 32 L94 20Z"/>
+      <path d="M100 168 L106 180 L100 192 L94 180Z"/>
+      <path d="M8 100 L20 94 L32 100 L20 106Z"/>
+      <path d="M168 100 L180 94 L192 100 L180 106Z"/>
+    </g>
+
+    <!-- Pontos decorativos -->
+    <g fill="currentColor">
+      <circle cx="100" cy="40" r="2"/>
+      <circle cx="100" cy="160" r="2"/>
+      <circle cx="40" cy="100" r="2"/>
+      <circle cx="160" cy="100" r="2"/>
+    </g>
+  </svg>
                             </div>
 
                             <div class="mt-2 space-y-1">
